@@ -1,0 +1,387 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Los Mensajeros de la Ética</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7f2;
+      color: #243326;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #174b32;
+      color: white;
+      padding: 25px 4%;
+      border-bottom: 6px solid #e6c53d;
+    }
+
+    .encabezado {
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      background: white;
+      border-radius: 12px;
+      padding: 5px;
+      flex-shrink: 0;
+    }
+
+    .titulo {
+      flex: 1;
+      text-align: center;
+    }
+
+    .titulo h1 {
+      font-size: clamp(22px, 4vw, 38px);
+      line-height: 1.2;
+      margin: 0 0 10px;
+    }
+
+    .titulo p {
+      margin: 0;
+    }
+
+    nav {
+      background: #e6c53d;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #173c28;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 12px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    section {
+      background: white;
+      margin-bottom: 25px;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 3px 12px #00000010;
+      scroll-margin-top: 20px;
+    }
+
+    h2 {
+      color: #17613a;
+      margin-top: 0;
+    }
+
+    .bienvenida {
+      text-align: center;
+      border-top: 5px solid #e6c53d;
+    }
+
+    .bienvenida h2 {
+      font-size: 28px;
+    }
+
+    .valores {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .valor {
+      background: #edf5e9;
+      padding: 18px;
+      border-radius: 12px;
+      text-align: center;
+      border-bottom: 3px solid #e6c53d;
+    }
+
+    .valor h3 {
+      color: #17613a;
+      margin-top: 0;
+    }
+
+    button {
+      background: #17613a;
+      color: white;
+      padding: 13px 22px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #103d26;
+    }
+
+    #mensaje {
+      font-weight: bold;
+      color: #17613a;
+    }
+
+    footer {
+      text-align: center;
+      background: #174b32;
+      color: white;
+      padding: 25px 15px;
+      border-top: 5px solid #e6c53d;
+    }
+
+    @media (max-width: 600px) {
+      .encabezado {
+        gap: 8px;
+      }
+
+      .logo {
+        width: 68px;
+        height: 68px;
+      }
+
+      .titulo h1 {
+        font-size: 19px;
+      }
+
+      .titulo p {
+        font-size: 12px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 7px;
+        font-size: 14px;
+      }
+
+      .valores {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="encabezado">
+
+      <img
+        class="logo"
+        src="escudo.jpg"
+        alt="Escudo de la Institución Educativa Rafael J. Mejía"
+      >
+
+      <div class="titulo">
+        <h1>LOS MENSAJEROS DE LA ÉTICA</h1>
+        <p>Institución Educativa Rafael J. Mejía</p>
+        <p>Sabaneta, Antioquia</p>
+      </div>
+
+      <img
+        class="logo"
+        src="buho.jpg"
+        alt="Logo del proyecto Los Mensajeros de la Ética"
+      >
+
+    </div>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#proyecto">El proyecto</a>
+    <a href="#valores">Valores</a>
+    <a href="#participar">Participa</a>
+  </nav>
+
+  <main>
+
+    <section id="inicio" class="bienvenida">
+      <h2>¡Bienvenidos, Mensajeros!</h2>
+
+      <p>
+        Cada acción cuenta. Con nuestro ejemplo podemos
+        inspirar a los demás, mejorar la convivencia y
+        construir una comunidad educativa más humana.
+      </p>
+
+      <p>
+        <strong>
+          La ética se demuestra con nuestras acciones,
+          no solamente con nuestras palabras.
+        </strong>
+      </p>
+    </section>
+
+    <section id="proyecto">
+      <h2>¿Qué son Los Mensajeros de la Ética?</h2>
+
+      <p>
+        Los Mensajeros de la Ética es un proyecto que busca
+        promover acciones positivas dentro de la comunidad
+        educativa Rafaelista.
+      </p>
+
+      <p>
+        A través del ejemplo, la creatividad y las acciones
+        éticas, buscamos generar reflexiones significativas
+        que motiven a estudiantes y demás integrantes de la
+        institución a mejorar sus comportamientos y relaciones.
+      </p>
+
+      <h2>Objetivo central</h2>
+
+      <p>
+        Motivar el cambio positivo desde el ejemplo, la
+        creatividad y la acción ética, generando reflexiones
+        significativas en nuestra comunidad educativa.
+      </p>
+
+      <p>
+        Ser portadores de acciones éticas que inspiren,
+        motiven y generen reflexión en la comunidad educativa
+        Rafaelista, promoviendo el respeto, la solidaridad,
+        la empatía, el sentido de pertenencia por nuestra
+        institución educativa y la responsabilidad.
+      </p>
+    </section>
+
+    <section id="valores">
+      <h2>Los valores que nos representan</h2>
+
+      <div class="valores">
+
+        <div class="valor">
+          <h3>🤝 Respeto</h3>
+          <p>
+            Escuchar, aceptar las diferencias y tratar
+            a todos con dignidad.
+          </p>
+        </div>
+
+        <div class="valor">
+          <h3>💚 Solidaridad</h3>
+          <p>
+            Ayudar a quienes lo necesitan y colaborar
+            sin esperar algo a cambio.
+          </p>
+        </div>
+
+        <div class="valor">
+          <h3>💙 Empatía</h3>
+          <p>
+            Comprender los sentimientos de los demás
+            y actuar con consideración.
+          </p>
+        </div>
+
+        <div class="valor">
+          <h3>🏫 Pertenencia</h3>
+          <p>
+            Cuidar nuestra institución y sentir orgullo
+            de formar parte de ella.
+          </p>
+        </div>
+
+        <div class="valor">
+          <h3>✅ Responsabilidad</h3>
+          <p>
+            Cumplir nuestros compromisos y asumir
+            las consecuencias de nuestras acciones.
+          </p>
+        </div>
+
+        <div class="valor">
+          <h3>✨ Creatividad</h3>
+          <p>
+            Proponer ideas originales para promover
+            una convivencia positiva.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="participar">
+      <h2>¿Cómo puedes ser un Mensajero de la Ética?</h2>
+
+      <ul>
+        <li>Trata a tus compañeros con respeto.</li>
+        <li>Ayuda a quienes necesitan apoyo.</li>
+        <li>Evita las burlas y promueve el diálogo.</li>
+        <li>Cuida los espacios y materiales del colegio.</li>
+        <li>Reconoce tus errores y aprende de ellos.</li>
+        <li>Inspira a otros mediante tus buenas acciones.</li>
+      </ul>
+
+      <p>
+        No necesitas hacer algo extraordinario para
+        generar un cambio. Una pequeña acción positiva
+        también puede inspirar a muchas personas.
+      </p>
+
+      <button onclick="mostrarMensaje()">
+        Descubre tu misión
+      </button>
+
+      <p id="mensaje" aria-live="polite"></p>
+    </section>
+
+  </main>
+
+  
+<footer>
+  <p><strong>LOS MENSAJEROS DE LA ÉTICA</strong></p>
+
+  <p>Institución Educativa Rafael J. Mejía · Sabaneta</p>
+
+  <div class="fundador">
+    <p>Fundador del proyecto</p>
+    <h3>JORGE ARMANDO ARDILA ROBLEDO</h3>
+    <p>
+      Nuestro reconocimiento y agradecimiento por
+      promover la ética, los valores y la sana convivencia
+      en nuestra comunidad educativa.
+    </p>
+  </div>
+
+  <p>El cambio comienza con nuestro ejemplo.</p>
+</footer>
+
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensaje").textContent =
+        "¡Tu misión es hacer el bien, actuar con honestidad e inspirar a los demás con tu ejemplo! 🌟";
+    }
+  </script>
+
+</body>
+</html>
